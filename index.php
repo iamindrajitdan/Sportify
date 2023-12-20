@@ -116,7 +116,6 @@ include('functions/function.php');
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-   
   <div class="alert alert-success" role="alert" style="text-align: center;">
     Free shipping and returns for all orders now!
   </div>
