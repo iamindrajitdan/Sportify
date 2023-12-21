@@ -14,7 +14,9 @@ include('functions/function.php');
 </head>
 
 <body>
+
   <!-- Navbar -->
+  
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">
@@ -100,7 +102,9 @@ include('functions/function.php');
       </div>
     </div>
   </nav>
+  
   <!-- Banners -->
+  
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <?php
@@ -119,20 +123,29 @@ include('functions/function.php');
   <div class="alert alert-success" role="alert" style="text-align: center;">
     Free shipping and returns for all orders now!
   </div>
-
+  
+  <!-- Displaying products -->
+  
   <div class="row row-cols-1 row-cols-md-4 row-cols-lg-6 row-cols-sm-2 g-4">
     <?php
-    get_products();
-    get_category_products();
-    get_brand_products();
-    cart();
+    get_products();//getting all products
+
+    get_category_products();//getting products using category selected
+
+    get_brand_products();//getting the products using brands selected
+    
+    cart();//cart function
     ?>
   </div>
+  
+  <!-- footer -->
+
   <footer>
     <?php
     include('footer.php');
     ?>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 

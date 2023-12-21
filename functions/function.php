@@ -1,5 +1,12 @@
- <?php
+  <!---------------
+    All the Functions are here
+  ----------------->
+  
+  <?php
+  // Including 
   include('includes/connect.php');
+
+  // Displaying all the products
   function get_products()
   {
     global $con;
@@ -40,6 +47,8 @@
       }
     }
   }
+
+  // Displaying all the products of the selected category
   function get_category_products()
   {
     global $con;
@@ -85,6 +94,8 @@
       }
     }
   }
+
+  // Displaying all the products of the selected brand
   function get_brand_products()
   {
     global $con;
@@ -130,6 +141,8 @@
       }
     }
   }
+
+  // Get products on the basis of search
   function search_products()
   {
     global $con;
@@ -174,6 +187,8 @@
       }
     }
   }
+
+  // Fetching the banners from the banner 
   function get_banners()
   {
     global $con;
@@ -189,6 +204,8 @@
         </div>";
     }
   }
+
+  // Getting the IP address of the Machine
   function getIPAddress()
   {
     //whether ip is from the share internet  
@@ -207,6 +224,8 @@
     // $ip = getIPAddress();
     // echo 'User Real IP Address - ' . $ip;
   }
+
+  // Creating function for adding the products to the cart.
   function cart()
   {
     global $con;
@@ -228,6 +247,8 @@
       }
     }
   }
+
+  // This is the cart function this fetch the cart product in the cart page
   function cart_item()
   {
     global $con;
@@ -245,6 +266,8 @@
       echo "$num";
     }
   }
+
+  // Calculating the Total price of the product in the cart
   function total()
   {
     global $con;
@@ -264,4 +287,5 @@
     }
     echo"$total";
   }
+
   ?>

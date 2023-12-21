@@ -14,6 +14,7 @@ include('functions/function.php');
 </head>
 
 <body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php"><img src="./logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></a>
@@ -32,10 +33,13 @@ include('functions/function.php');
       </div>
     </div>
   </nav>
+
+  <!-- Container -->
   <div class="container">
+    
     <form action="" method="post">
       <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <label for="exampleInputEmail1" class="form-label">Email address</label> 
         <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
@@ -49,6 +53,7 @@ include('functions/function.php');
 </body>
 
 </html>
+
 <?php
 if (isset($_POST['submit'])) {
   $email = $_POST['email'];

@@ -7,6 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   </head>
   <body>
+
+    <!-- Navbar -->
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
           <span class="navbar-text">
@@ -14,6 +16,8 @@
           </span>
         </div>
       </nav>
+
+      <!-- Container -->
       <div class="container-fluid">
       <a class="icon-link icon-link-hover" href="tel:+918927266416">
         Call Now<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
